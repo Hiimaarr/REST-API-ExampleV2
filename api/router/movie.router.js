@@ -1,4 +1,4 @@
-const router = require("express").Router(); //Importamos el objeto router de express
+const router = require("express").Router(); 
 
 const {
   getAllMovies,
@@ -6,9 +6,9 @@ const {
   createMovie,
   updateMovie,
   deleteMovie,
-} = require("../controllers/movie.controller"); //Nos importamos los controladores
+} = require("../controllers/movie.controller"); 
 
-//Definimos las diferentes rutas, con sus parámetros y controladores respectivamente y específicando su método HTTP
+
 router.get("/", getAllMovies);
 router.get("/:id", getMovie);
 

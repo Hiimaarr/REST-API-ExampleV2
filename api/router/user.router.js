@@ -1,4 +1,4 @@
-const router = require("express").Router() //Importamos el objeto router de express
+const router = require("express").Router() 
 
 const {
     getAllUsers,
@@ -6,10 +6,10 @@ const {
     createUser,
     updateUser,
     deleteUser
-} = require("../controllers/user.controller") //Nos importamos los controladores
+} = require("../controllers/user.controller") 
 
 
-//Definimos las diferentes rutas, con sus parámetros y controladores respectivamente y específicando su método HTTP
+
 router.get("/", getAllUsers)
 router.get("/:id", getUser)
 
